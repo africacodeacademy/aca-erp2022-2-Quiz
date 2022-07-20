@@ -1,6 +1,5 @@
 version: 2.1
 
-o
 orbs:
   heroku: circleci/heroku@0.0.10
 
