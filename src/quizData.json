@@ -1,0 +1,135 @@
+[
+    {
+      "question": "What is Git?",
+      "answers": [
+        { "text": "A version control system", "correct": true },
+        { "text": "A programming language", "correct": false },
+        { "text": "A cloud storage service", "correct": false },
+        { "text": "An operating system", "correct": false }
+      ]
+    },
+    {
+      "question": "What command is used to stage changes in Git?",
+      "answers": [
+        { "text": "git add", "correct": true },
+        { "text": "git stage", "correct": false },
+        { "text": "git commit", "correct": false },
+        { "text": "git push", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you create a new branch in Git?",
+      "answers": [
+        { "text": "git create-branch", "correct": false },
+        { "text": "git branch new-branch", "correct": false },
+        { "text": "git new-branch", "correct": false },
+        { "text": "git checkout -b new-branch", "correct": true }
+      ]
+    },
+    {
+      "question": "What is the purpose of a Git merge?",
+      "answers": [
+        { "text": "To create a new branch", "correct": false },
+        { "text": "To undo the last commit", "correct": false },
+        { "text": "To combine changes from different branches", "correct": true },
+        { "text": "To remove files from the repository", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you check the status of a Git repository and view modified files?",
+      "answers": [
+        { "text": "git check", "correct": false },
+        { "text": "git status", "correct": true },
+        { "text": "git diff", "correct": false },
+        { "text": "git show", "correct": false }
+      ]
+    }, {
+        "question": "How do you create a new tag for a specific commit in Git?",
+        "answers": [
+          { "text": "git create-tag <tag_name>", "correct": false },
+          { "text": "git tag <tag_name>", "correct": true },
+          { "text": "git add-tag <tag_name>", "correct": false },
+          { "text": "git new-tag <tag_name>", "correct": false }
+        ]
+      },
+      {
+        "question": "What is a Git remote?",
+        "answers": [
+          { "text": "A local copy of the repository", "correct": false },
+          { "text": "A branch with restricted access", "correct": false },
+          { "text": "A reference to a repository hosted on a remote server", "correct": true },
+          { "text": "A backup of the entire repository", "correct": false }
+        ]
+      },
+      {
+        "question": "How do you push local changes to a remote repository in Git?",
+        "answers": [
+          { "text": "git sync", "correct": false },
+          { "text": "git merge", "correct": false },
+          { "text": "git push", "correct": true },
+          { "text": "git upload", "correct": false }
+        ]
+      },
+      {
+        "question": "What is a Git submodule?",
+        "answers": [
+          { "text": "A branch within a branch", "correct": false },
+          { "text": "A lightweight copy of a repository", "correct": true },
+          { "text": "A folder with binary files", "correct": false },
+          { "text": "A commit message with a title and description", "correct": false }
+        ]
+      },
+      {
+        "question": "How do you create a pull request in GitHub?",
+        "answers": [
+          { "text": "git request-pull", "correct": false },
+          { "text": "git create-pull", "correct": false },
+          { "text": "git pull-request", "correct": false },
+          { "text": "Through the 'New Pull Request' button on GitHub", "correct": true }
+        ]
+      },{
+        "question": "What is a pull request review in GitHub?",
+        "answers": [
+          { "text": "A feature that automatically approves and merges pull requests", "correct": false },
+          { "text": "A process to evaluate and discuss proposed changes before merging", "correct": true },
+          { "text": "A way to delete a pull request from the repository", "correct": false },
+          { "text": "A report of all the changes made in a pull request", "correct": false }
+        ]
+      },
+      {
+        "question": "How do you remove a file from a Git repository?",
+        "answers": [
+          { "text": "git remove <file_name>", "correct": false },
+          { "text": "git delete <file_name>", "correct": false },
+          { "text": "git rm <file_name>", "correct": true },
+          { "text": "git discard <file_name>", "correct": false }
+        ]
+      },
+      {
+        "question": "What is a Git rebase used for?",
+        "answers": [
+          { "text": "To merge two branches into one", "correct": false },
+          { "text": "To rewrite the commit history and apply changes on top of another branch", "correct": true },
+          { "text": "To synchronize the local repository with a remote repository", "correct": false },
+          { "text": "To update the local repository with the latest changes", "correct": false }
+        ]
+      },
+      {
+        "question": "How do you configure a global username and email in Git?",
+        "answers": [
+          { "text": "git config --global username 'Your Name'", "correct": false },
+          { "text": "git set username 'Your Name'", "correct": false },
+          { "text": "git config --global user.name 'Your Name'", "correct": true },
+          { "text": "git set config --global username 'Your Name'", "correct": false }
+        ]
+      },
+      {
+        "question": "What is the purpose of the 'git rebase -i' command?",
+        "answers": [
+          { "text": "To interactively squash commits together", "correct": true },
+          { "text": "To revert the most recent commit", "correct": false },
+          { "text": "To merge multiple branches", "correct": false },
+          { "text": "To view the commit history", "correct": false }
+        ]
+      }
+]
