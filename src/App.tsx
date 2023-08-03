@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './aca.png';
+import React from "react";
+import logo from "./aca.png";
 import './App.css';
+import './components/Questions'
+import Quiz from "./components/Quiz";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         >
           I Love ACA
         </a>
+        <Quiz/>
       </header>
     </div>
   );
