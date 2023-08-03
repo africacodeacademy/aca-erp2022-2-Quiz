@@ -4,8 +4,8 @@ interface QuestionProps {
   question: string;
   options: string[];
   handleAnswer: (answer: string) => void;
-  showFinishButton?: boolean; // Optional prop to show "Finish Quiz" button
-  onFinishQuiz?: () => void; // Optional callback when "Finish Quiz" button is clicked
+  showFinishButton?: boolean; 
+  onFinishQuiz?: () => void; 
 }
 
 const Question: React.FC<QuestionProps> = ({

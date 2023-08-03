@@ -16,7 +16,7 @@ const Result: React.FC<ResultProps> = ({ score, userAnswers }) => {
       <div>
         <h1>Quiz Results</h1>
         <p>Your Score: {score}</p>
-        <h2>Questions you got wrong:</h2>
+        <h2>Compare your Answers:</h2>
         <ul>
           {userAnswers.map((answer, index) => (
             <li key={index}>

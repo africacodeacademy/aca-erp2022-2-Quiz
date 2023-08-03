@@ -10,7 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} style={{maxWidth:150, maxHeight:150}} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Click on the link below to access the ACA website
         </p>
         <a
           className="App-link"
