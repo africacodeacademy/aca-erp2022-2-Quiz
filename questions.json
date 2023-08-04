@@ -23,6 +23,35 @@
         "A request to reset the repository to a previous state"
       ],
       "correctAnswer": "A request to merge code changes from one branch to another"
-    }
+    },
+    {
+        "question": "Which command is used to create a new branch in Git?",
+        "options": ["git branch", "git commit", "git clone", "git new-branch"],
+        "correctAnswer": "git branch"
+      },
+      {
+        "question": "What is a \"pull request\" in GitHub?",
+        "options": [
+          "A request to retrieve the latest changes from the remote repository",
+          "A request to merge code changes from one branch to another",
+          "A request to delete a branch",
+          "A request to reset the repository to a previous state"
+        ],
+        "correctAnswer": "A request to merge code changes from one branch to another"
+      }, {
+        "question": "Which command is used to create a new branch in Git?",
+        "options": ["git branch", "git commit", "git clone", "git new-branch"],
+        "correctAnswer": "git branch"
+      },
+      {
+        "question": "What is a \"pull request\" in GitHub?",
+        "options": [
+          "A request to retrieve the latest changes from the remote repository",
+          "A request to merge code changes from one branch to another",
+          "A request to delete a branch",
+          "A request to reset the repository to a previous state"
+        ],
+        "correctAnswer": "A request to merge code changes from one branch to another"
+      }
   ]
   

@@ -46,19 +46,19 @@ const Quiz: React.FC = () => {
             />
           ))}
       </div>
-      <button
+      <button className='navigation-buttons'
         onClick={() => setCurrentPage(currentPage - 1)}
         disabled={currentPage === 0}
       >
         Previous
       </button>
-      <button
+      <button className='navigation-buttons'
         onClick={() => setCurrentPage(currentPage + 1)}
         disabled={(currentPage + 1) * BATCH_SIZE >= questions.length}
       >
         Next
       </button>
-      <p>Score: {score}</p>
+      <p className='score'>Score: {score}/50 </p>
     </div>
   );
 };
