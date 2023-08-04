@@ -28,4 +28,5 @@ const Congratulations: React.FC<CongratulationsProps> = ({ score, totalQuestions
   );
 };
 
+
 export default Congratulations;
