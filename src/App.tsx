@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
 import logo from './aca.png';
 import quizData from './quizData.json';
+import Congratulations from './components/Congratulations';
+
 import './App.css';
 
 function App() {
   
   const [currentQuestion, setCurrectQuestion] = useState(0)
   const [score, setCurrectScore] = useState(0)
+  const [quizCompleted, setQuizCompleted] = useState(false);
 
   /*create an array of objects {the object name is 
     the question, the atributes are the answeres. 
@@ -22,7 +25,7 @@ function App() {
       if (nextQuestion < quizData.length) {
         setCurrectQuestion(nextQuestion)
       } else {
-        alert(`Quiz finished! Your score: ${score}/${quizData.length}`)
+        setQuizCompleted(true);
       }
     }
 
@@ -43,21 +46,24 @@ function App() {
         </a>
 
         <div className="container">
-          <div className="quiz-box">
-            <div className="quiz-question">
-              <h2>{quizData[currentQuestion].question}</h2>
-            </div>
-            <div className="quiz-options">
-              <ul>
-                {quizData[currentQuestion].answers.map((answer, index) => (
-                  <li key={index} onClick={() => handleAnswerClick(answer.correct)}>
-                    <div className="option">
-                      <p> {answer.text}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div className="quiz-box">
+            {quizCompleted ? (
+              <Congratulations score={score} totalQuestions={quizData.length} />
+            ) : (
+              <><div className="quiz-question">
+                  <h2>{quizData[currentQuestion].question}</h2>
+                </div><div className="quiz-options">
+                    <ul>
+                      {quizData[currentQuestion].answers.map((answer, index) => (
+                        <li key={index} onClick={() => handleAnswerClick(answer.correct)}>
+                          <div className="option">
+                            <p>{answer.text}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div></>
+            )}
           </div>
         </div>
       </header> 
