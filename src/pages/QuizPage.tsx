@@ -58,7 +58,7 @@ const Quiz: React.FC = () => {
       >
         Next
       </button>
-      <p className='score'>Score: {score}/50 </p>
+      <p className='score'>Score: {score}/{questions.length} </p>
     </div>
   );
 };
