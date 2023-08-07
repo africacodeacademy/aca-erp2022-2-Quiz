@@ -1,16 +1,24 @@
 import React from 'react';
-import logo from './aca.png';
 import './App.css';
-import Quiz from './pages/QuizPage';
+import { BrowserRouter as Router } from 'react-router-dom';
+import SideNavigation from './components/SideNavigation';
+import TopNavigation from './components/TopNavigation';
+import TextSection from './components/TextSection';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} style={{maxWidth:150, maxHeight:150}} className="App-logo" alt="logo" />
-      </header>
-      <Quiz/>
+    <Router>
+    <div className="app">
+      <div className="nsection-container">
+        <SideNavigation />
+        <div className="main-content">
+          <TopNavigation />
+          <TextSection />
+        </div>
+      </div>
     </div>
+    
+    </Router>
   );
 }
 

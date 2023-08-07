@@ -1,0 +1,47 @@
+
+   
+.top-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .top-navigation li {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  /* Style for the top navigation */
+.top-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.top-navigation li {
+  margin: 0;
+}
+
+/* Style for the links */
+.top-navigation a {
+  text-decoration: none; /* Remove underlining */
+  display: block;
+  padding: 10px;
+  margin-bottom: 5px;
+  color: #000; /* Default color */
+}
+
+/* Different colors for each link */
+.top-navigation a:nth-child(1) {
+  color: #ff0000; /* Red */
+}
+
+.top-navigation a:nth-child(2) {
+  color: #00ff00; /* Green */
+}
+
+.top-navigation a:nth-child(3) {
+  color: #0000ff; /* Blue */
+}

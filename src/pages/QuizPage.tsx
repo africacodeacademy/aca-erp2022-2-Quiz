@@ -3,7 +3,7 @@ import Question from '../components/Question';
 import { questions } from '../questions';
 import '../pages/QuizPage.css';
 
-const BATCH_SIZE = 10;
+const BATCH_SIZE = 5;
 
 const Quiz: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);

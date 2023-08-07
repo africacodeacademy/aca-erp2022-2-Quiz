@@ -1,0 +1,37 @@
+
+  
+  .side-navigation {
+    flex: 1;
+    background-color: #7f00ff;
+    padding: 20px;
+  }
+  
+  .side-navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .side-navigation li {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  /* Style for the side navigation */
+.side-navigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-navigation li {
+  margin: 0;
+}
+
+/* Style for the links */
+.side-navigation a {
+  text-decoration: none; /* Remove underlining */
+  display: block;
+  padding: 40px;
+  border: 1px solid #ccc; /* Add a box */
+  margin-bottom: 5px;
+  color: #000; /* Default color */
+}
