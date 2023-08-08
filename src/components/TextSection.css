@@ -1,0 +1,17 @@
+
+.text-section {
+
+  padding: 10px;
+ 
+  border-radius: 40px;
+  }
+  
+  .peter{
+  display: flex; /* Use flexbox */
+  justify-content: flex-end; /* Align the content to the right */
+  margin-left: auto;
+  margin-right: -28px;
+  margin-top: -178px;
+  max-height: 900px;
+  }
+    
