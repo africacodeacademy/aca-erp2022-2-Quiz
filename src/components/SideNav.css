@@ -1,9 +1,10 @@
 
   
   .side-navigation {
-    flex: 1;
-    background-color: #7f00ff;
-    padding: 20px;
+    /* flex: 1; */
+    /* background-color: #7f00ff; */
+    margin-right: 0; /* Set margin-right to 0 to remove right margin */
+    margin-left: 50px;
   }
   
   .side-navigation ul {
@@ -30,8 +31,41 @@
 .side-navigation a {
   text-decoration: none; /* Remove underlining */
   display: block;
-  padding: 40px;
-  border: 1px solid #ccc; /* Add a box */
-  margin-bottom: 5px;
+  padding: 5px;
+  /* border: 1px solid #ccc; Add a box */
+  
   color: #000; /* Default color */
 }
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 15px;
+  height: auto;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+
+}
+
+.logos img {
+  width: 200px;
+  height: 100px;
+  transition: transform 0.3s; /* Add a transition for smooth effect */
+}
+
+
+.logos img:hover {
+  transform: scale(1.1); /* Apply a scale transform on hover */
+/* Initially transparent */
+;
+}
+
+
+

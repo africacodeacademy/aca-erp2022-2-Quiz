@@ -4,7 +4,8 @@
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  min-height: 100vh; /* Ensure full screen height */
+  min-height: 100vh;
+   /* Ensure full screen height */
 }
 
 .nsection-container {
@@ -12,11 +13,16 @@
   height: 600px; /* Adjust height as needed */
   background-color: #fff;
   display: flex;
+  background-image: url('./assets/back.webp');
+    margin-top: -96px;
+    background-size: cover; 
+  
 }
 
 .main-content {
   flex: 3;
   padding: 20px;
+  
 }
 
 

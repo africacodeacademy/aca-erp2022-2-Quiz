@@ -10,6 +10,7 @@ const App: React.FC = () => {
     <Router>
     <div className="app">
       <div className="nsection-container">
+        
         <SideNavigation />
         <div className="main-content">
           <TopNavigation />
