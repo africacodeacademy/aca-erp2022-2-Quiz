@@ -1,24 +1,30 @@
-import React from 'react';
-import logo from './aca.png';
-import './App.css';
-
+import React, {useState, useContext} from 'react';
+import Quiz from './components/quiz/Quiz'
+import ScoreScreen from './components/scores/ScoreScreen';
+import { AppContext } from './components/Context';
+import User from './components/user/User';
+import "./components/Style.css"
+import BottomNav from './components/navigation/bottomnav';
+import "./index.css"
 function App() {
+  let [quizState, setQuizState] = useState("userForm");
+  const [name,setName] = useState("")
+  let [score, setScore] = useState(0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} style={{maxWidth:150, maxHeight:150}} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://africacode.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          I Love ACA
-        </a>
-      </header>
+      <AppContext.Provider value={{quizState, setQuizState, score, setScore, name, setName}}>
+        <div style={{display: "flex",flexDirection: "column" ,gap: 10 }}>
+          <div>
+            {quizState === "userForm" && <User/>}
+            {quizState === "container" && <Quiz/>}
+            {quizState === "endGame" && <ScoreScreen/>}
+          </div>
+          <div>
+            <BottomNav />
+          </div>
+        </div>
+      </AppContext.Provider> 
     </div>
   );
 }
