@@ -1,0 +1,130 @@
+/* src/App.css */
+
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+.App-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.quiz-container {
+  background-color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.question-number {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.question-text {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.options-list li {
+  margin-bottom: 12px;
+}
+
+.options-list label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.options-list input[type="radio"] {
+  margin-right: 15px;
+  transform: scale(1.2);
+}
+
+.options-list label:hover {
+  border-color: #2980b9;
+}
+
+.options-list input[type="radio"]:checked + span,
+.options-list input[type="radio"]:checked + label {
+  border-color: #3498db;
+  background-color: #ecf6fd;
+}
+
+button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1c5980;
+}
+
+.summary {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.summary h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.summary ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary li {
+  margin-bottom: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.summary strong {
+  color: #2980b9;
+}
+
+.summary em {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
