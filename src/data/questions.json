@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "question": "What is the git command that downloads your repository from GitHub to your computer?",
+    "options": ["git push", "git commit", "git fork", "git clone"],
+    "correct": 3,
+    "concept": "Git Clone",
+    "explanation": "git clone creates a local copy of a remote repository",
+    "usage": "Used to download the initial project repository from GitHub",
+    "location": "Terminal/Command line during project setup"
+  },
+  {
+    "id": 2,
+    "question": "Which React hook is used to manage component state?",
+    "options": ["useEffect", "useState", "useContext", "useReducer"],
+    "correct": 1,
+    "concept": "React useState Hook",
+    "explanation": "useState allows functional components to have state",
+    "usage": "Used to manage quiz state, current question, and user answers",
+    "location": "Throughout the Quiz component for state management"
+  }
+    ,
+    {
+        "id": 3,
+        "question": "What is the purpose of the useEffect hook in React?",
+        "options": [
+        "To manage component state",
+        "To perform side effects like data fetching",
+        "To handle user input",
+        "To create reusable components"
+        ],
+        "correct": 1,
+        "concept": "React useEffect Hook",
+        "explanation": "useEffect runs side effects after rendering, like fetching data",
+        "usage": "Used to fetch quiz questions from an API or local file",
+        "location": "In the Quiz component to load questions on mount"
+    }
+]
