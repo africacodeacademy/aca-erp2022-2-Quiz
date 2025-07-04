@@ -34,5 +34,480 @@
         "explanation": "useEffect runs side effects after rendering, like fetching data",
         "usage": "Used to fetch quiz questions from an API or local file",
         "location": "In the Quiz component to load questions on mount"
-    }
+    },
+    {
+    "id": 4,
+    "question": "Which command creates a new React app with TypeScript?",
+    "options": [
+      "npx create-react-app myapp",
+      "npx create-react-app myapp --template typescript",
+      "npm init react-app",
+      "yarn create react-app"
+    ],
+    "correct": 1,
+    "concept": "Create React App with TypeScript",
+    "explanation": "The --template typescript flag sets up a React app with TypeScript configuration",
+    "usage": "Used to bootstrap this quiz application project",
+    "location": "Initial project setup command"
+  },
+  {
+    "id": 5,
+    "question": "What is GitHub used for in software development?",
+    "options": ["Hosting websites", "File sharing", "Version control and collaboration", "Database management"],
+    "correct": 2,
+    "concept": "GitHub Basics",
+    "explanation": "GitHub is a web-based platform used for version control and collaborative development using git.",
+    "usage": "Used to host and manage the quiz application codebase",
+    "location": "Remote repository on GitHub"
+  },
+  {
+    "id": 6,
+    "question": "Which React hook is used for side effects?",
+    "options": ["useState", "useEffect", "useCallback", "useMemo"],
+    "correct": 1,
+    "concept": "React useEffect Hook",
+    "explanation": "useEffect handles side effects like timers, API calls, and cleanup",
+    "usage": "Used to manage the quiz timer and score persistence",
+    "location": "Quiz component for timer management and localStorage operations"
+  },
+  {
+    "id": 7,
+    "question": "What does JSON stand for?",
+    "options": ["JavaScript Object Notation", "Java Standard Object Notation", "JavaScript Oriented Notation", "Java Serialized Object Network"],
+    "correct": 0,
+    "concept": "JSON Format",
+    "explanation": "JSON is a lightweight data interchange format",
+    "usage": "Used to store quiz questions and score data",
+    "location": "Questions array and localStorage operations"
+  },
+  {
+    "id": 8,
+    "question": "Which CSS framework is commonly used with React for styling?",
+    "options": ["Bootstrap", "Tailwind CSS", "Material-UI", "All of the above"],
+    "correct": 3,
+    "concept": "CSS Frameworks",
+    "explanation": "Multiple CSS frameworks can be used with React",
+    "usage": "Tailwind CSS classes used for component styling",
+    "location": "className attributes throughout the component"
+  },
+  {
+    "id": 9,
+    "question": "What is the purpose of the key prop in React lists?",
+    "options": ["Styling", "Unique identification", "Event handling", "State management"],
+    "correct": 1,
+    "concept": "React Keys",
+    "explanation": "Keys help React identify which items have changed, added, or removed",
+    "usage": "Used in mapping over questions and options arrays",
+    "location": "When rendering question options and result lists"
+  },
+  {
+    "id": 10,
+    "question": "Which method is used to store data in the browser's local storage?",
+    "options": ["localStorage.get()", "localStorage.setItem()", "localStorage.save()", "localStorage.store()"],
+    "correct": 1,
+    "concept": "Browser localStorage",
+    "explanation": "localStorage.setItem() stores data with a key-value pair",
+    "usage": "Used to save quiz scores persistently",
+    "location": "Score saving functionality in the quiz completion handler"
+  },
+  {
+    "id": 11,
+    "question": "What is the correct way to define a functional component in React with TypeScript?",
+    "options": ["const Component = () => {}", "const Component: React.FC = () => {}", "function Component() {}", "Both B and C"],
+    "correct": 3,
+    "concept": "TypeScript React Components",
+    "explanation": "Both React.FC and function declarations work for TypeScript components",
+    "usage": "Used to define the main Quiz component",
+    "location": "Component definition structure"
+  },
+  {
+    "id": 12,
+    "question": "Which lifecycle method is equivalent to componentDidMount in functional components?",
+    "options": ["useEffect with empty dependency array", "useEffect with dependencies", "useState", "useCallback"],
+    "correct": 0,
+    "concept": "React Lifecycle in Hooks",
+    "explanation": "useEffect with [] runs once after initial render",
+    "usage": "Used to initialize timer and load saved scores",
+    "location": "Timer initialization and score loading logic"
+  },
+  {
+    "id": 13,
+    "question": "What is the purpose of the dependency array in useEffect?",
+    "options": ["To import dependencies", "To control when the effect runs", "To define state variables", "To handle errors"],
+    "correct": 1,
+    "concept": "useEffect Dependencies",
+    "explanation": "Dependencies control when useEffect re-runs",
+    "usage": "Used to control timer updates and cleanup",
+    "location": "useEffect hooks for timer and score management"
+  },
+  {
+    "id": 14,
+    "question": "Which command installs dependencies listed in package.json?",
+    "options": ["npm install", "npm start", "npm build", "npm test"],
+    "correct": 0,
+    "concept": "NPM Install",
+    "explanation": "npm install downloads and installs all dependencies",
+    "usage": "Used to install React, TypeScript, and other project dependencies",
+    "location": "Project setup after cloning repository"
+  },
+  {
+    "id": 15,
+    "question": "What is the purpose of the package.json file?",
+    "options": ["Store source code", "Define project metadata and dependencies", "Configure webpack", "Handle routing"],
+    "correct": 1,
+    "concept": "Package.json",
+    "explanation": "package.json contains project information and dependency list",
+    "usage": "Used to manage project dependencies and scripts",
+    "location": "Root directory of the project"
+  },
+  {
+    "id": 16,
+    "question": "Which command starts the development server for a React app?",
+    "options": ["npm start", "npm run dev", "npm serve", "npm launch"],
+    "correct": 0,
+    "concept": "NPM Start Script",
+    "explanation": "npm start runs the development server with hot reloading",
+    "usage": "Used to run the quiz app during development",
+    "location": "Terminal command for development"
+  },
+  {
+    "id": 17,
+    "question": "What is the purpose of the public folder in a React app?",
+    "options": ["Store components", "Store static assets", "Store configuration", "Store tests"],
+    "correct": 1,
+    "concept": "React Public Folder",
+    "explanation": "public folder contains static assets served directly",
+    "usage": "Used to store index.html and other static files",
+    "location": "public directory in project structure"
+  },
+  {
+    "id": 18,
+    "question": "Which method retrieves data from localStorage?",
+    "options": ["localStorage.getItem()", "localStorage.retrieve()", "localStorage.get()", "localStorage.fetch()"],
+    "correct": 0,
+    "concept": "localStorage.getItem()",
+    "explanation": "getItem() retrieves stored data by key",
+    "usage": "Used to retrieve previously saved quiz scores",
+    "location": "Score loading functionality"
+  },
+  {
+    "id": 19,
+    "question": "Which command initializes a new Git repository?",
+    "options": ["git start", "git init", "git new", "git create"],
+    "correct": 1,
+    "concept": "git init",
+    "explanation": "The 'git init' command creates a new Git repository in the current directory.",
+    "usage": "Used to start tracking a new project with Git.",
+    "location": "Project root directory"
+  },
+  {
+    "id": 20,
+    "question": "What is the command to stage all changes for a commit?",
+    "options": ["git add .", "git stage all", "git commit -a", "git track --all"],
+    "correct": 0,
+    "concept": "git add",
+    "explanation": "'git add .' stages all new and modified files in the current directory for the next commit.",
+    "usage": "Preparing all changed files to be saved in the repository's history.",
+    "location": "Staging changes"
+  },
+  {
+    "id": 21,
+    "question": "Which command saves the staged changes to the local repository?",
+    "options": ["git save", "git push", "git commit -m 'message'", "git store"],
+    "correct": 2,
+    "concept": "git commit",
+    "explanation": "'git commit' records the staged snapshot to the project's history. The -m flag adds a commit message.",
+    "usage": "Creating a checkpoint or snapshot of the project's state.",
+    "location": "Version history management"
+  },
+  {
+    "id": 22,
+    "question": "How do you upload your local repository's committed changes to a remote repository?",
+    "options": ["git upload", "git send", "git transfer", "git push"],
+    "correct": 3,
+    "concept": "git push",
+    "explanation": "'git push' is used to upload local repository content to a remote repository.",
+    "usage": "Sharing your local commits with a remote server like GitHub.",
+    "location": "Syncing with remote"
+  },
+  {
+    "id": 23,
+    "question": "What does the 'git clone' command do?",
+    "options": ["Creates a copy of a local repository", "Copies a remote repository to your local machine", "Creates a new branch", "Merges two repositories"],
+    "correct": 1,
+    "concept": "git clone",
+    "explanation": "'git clone' is a command for downloading a copy of an existing repository from a remote source.",
+    "usage": "Getting a local working copy of a project from GitHub.",
+    "location": "Project setup"
+  },
+  {
+    "id": 24,
+    "question": "Which command fetches changes from a remote repository and merges them into the current branch?",
+    "options": ["git fetch", "git merge", "git pull", "git sync"],
+    "correct": 2,
+    "concept": "git pull",
+    "explanation": "'git pull' is a combination of 'git fetch' (downloads content) and 'git merge' (integrates it).",
+    "usage": "Updating your local branch with the latest changes from the remote.",
+    "location": "Syncing with remote"
+  },
+  {
+    "id": 25,
+    "question": "What is a 'fork' in GitHub?",
+    "options": ["A split in project history", "A personal copy of another user's repository", "A backup of a repository", "A new branch in a repository"],
+    "correct": 1,
+    "concept": "GitHub Fork",
+    "explanation": "A fork is a copy of a repository that you manage, allowing you to experiment without affecting the original project.",
+    "usage": "Proposing changes to an open-source project you don't have write access to.",
+    "location": "GitHub collaboration workflow"
+  },
+  {
+    "id": 26,
+    "question": "How do you create a new branch in Git?",
+    "options": ["git new-branch <branch-name>", "git branch <branch-name>", "git create <branch-name>", "git checkout new <branch-name>"],
+    "correct": 1,
+    "concept": "git branch",
+    "explanation": "'git branch <branch-name>' creates a new branch, but does not switch to it.",
+    "usage": "Preparing to work on a new feature without affecting the main codebase.",
+    "location": "Branching workflow"
+  },
+  {
+    "id": 27,
+    "question": "Which command switches to a different branch?",
+    "options": ["git switch <branch-name>", "git move <branch-name>", "git go <branch-name>", "git change <branch-name>"],
+    "correct": 0,
+    "concept": "git switch/checkout",
+    "explanation": "'git switch <branch-name>' (or 'git checkout <branch-name>') switches the working directory to the specified branch.",
+    "usage": "Starting to work on an existing feature or bug-fix branch.",
+    "location": "Branch navigation"
+  },
+  {
+    "id": 28,
+    "question": "What is the purpose of a Pull Request (PR) on GitHub?",
+    "options": ["To force an update to your local repository", "To delete a remote branch", "To inform others about changes you've pushed and request a code review", "To download files from a repository"],
+    "correct": 2,
+    "concept": "Pull Request (PR)",
+    "explanation": "A PR lets you tell others about changes you've pushed to a branch in a repository on GitHub, initiating a review and merge discussion.",
+    "usage": "Proposing that your changes be merged into the main project.",
+    "location": "GitHub collaboration workflow"
+  },
+  {
+    "id": 29,
+    "question": "What does 'git merge' do?",
+    "options": ["Combines multiple sequences of commits into one unified history", "Deletes a branch", "Undoes a commit", "Renames a branch"],
+    "correct": 0,
+    "concept": "git merge",
+    "explanation": "'git merge' integrates the changes from a specified branch into the current branch.",
+    "usage": "Incorporating a completed feature branch back into the main branch.",
+    "location": "Branching workflow"
+  },
+  {
+    "id": 30,
+    "question": "What is GitHub primarily used for?",
+    "options": ["Writing code", "Hosting and managing software development using Git", "Deploying applications", "Running databases"],
+    "correct": 1,
+    "concept": "GitHub",
+    "explanation": "GitHub is a platform for hosting Git repositories and providing developer collaboration tools.",
+    "usage": "Centralized storage and collaboration for team-based software projects.",
+    "location": "Cloud version control"
+  },
+  {
+    "id": 31,
+    "question": "What is Vercel primarily used for?",
+    "options": ["Database management", "Deploying frontend frameworks and static sites", "Version control", "Code editing"],
+    "correct": 1,
+    "concept": "Vercel Deployment",
+    "explanation": "Vercel is a cloud platform optimized for deploying modern frontend frameworks and static websites with zero configuration.",
+    "usage": "Hosting a Next.js, React, or static HTML site.",
+    "location": "Deployment pipeline"
+  },
+  {
+    "id": 32,
+    "question": "How do you deploy a project to Vercel from your terminal?",
+    "options": ["vercel upload", "vercel push", "vercel", "vercel send"],
+    "correct": 2,
+    "concept": "Vercel CLI",
+    "explanation": "Running the 'vercel' command in a project directory starts the deployment process with the Vercel CLI.",
+    "usage": "Deploying a project directly from the command line.",
+    "location": "Local development environment"
+  },
+  {
+    "id": 33,
+    "question": "Vercel's platform is well-known for its support of which type of functions?",
+    "options": ["Synchronous Functions", "Database Functions", "Serverless Functions", "Client-side Functions"],
+    "correct": 2,
+    "concept": "Serverless Functions",
+    "explanation": "Vercel provides a seamless way to deploy and run serverless functions for backend logic.",
+    "usage": "Creating an API endpoint for a frontend application without managing a server.",
+    "location": "API route implementation"
+  },
+  {
+    "id": 34,
+    "question": "What feature of Vercel automatically creates a unique, shareable deployment for every Git push?",
+    "options": ["Production Deployments", "Automatic Deployments", "Preview Deployments", "Branch Deployments"],
+    "correct": 2,
+    "concept": "Preview Deployments",
+    "explanation": "For every push to a Git branch (that isn't the production branch), Vercel creates a unique preview deployment.",
+    "usage": "Sharing a work-in-progress feature with a teammate for review.",
+    "location": "CI/CD Git integration"
+  },
+  {
+    "id": 35,
+    "question": "How do you manage secret keys, like API tokens, in a Vercel project?",
+    "options": ["Hardcode them in the source code", "Store them in a public file", "Use Environment Variables", "Email them to the team"],
+    "correct": 2,
+    "concept": "Environment Variables",
+    "explanation": "Vercel allows you to securely store sensitive information as environment variables via the project dashboard or CLI.",
+    "usage": "Storing a database connection string or third-party API key securely.",
+    "location": "Vercel project settings"
+  },
+  {
+    "id": 36,
+    "question": "Which Vercel domain is automatically assigned to the main branch of your Git repository?",
+    "options": ["Staging URL", "Preview URL", "Development URL", "Production URL"],
+    "correct": 3,
+    "concept": "Production URL",
+    "explanation": "Deployments from the default Git branch (e.g., 'main' or 'master') are automatically assigned the project's Production URL.",
+    "usage": "The live, public-facing website address.",
+    "location": "Deployment domains"
+  },
+  {
+    "id": 37,
+    "question": "To connect a custom domain (e.g., my-awesome-app.com) to a Vercel project, what do you need to modify?",
+    "options": ["Your project's package.json", "Vercel's source code", "Your domain's DNS records", "Your local hosts file"],
+    "correct": 2,
+    "concept": "Custom Domains",
+    "explanation": "You must configure the DNS records (like A or CNAME records) with your domain registrar to point to Vercel's servers.",
+    "usage": "Making your Vercel-hosted site available at your personal domain.",
+    "location": "Domain management dashboard"
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the `vercel.json` file?",
+    "options": ["To store user credentials", "To define project configuration and deployment settings", "To list project dependencies", "To write server-side logic"],
+    "correct": 1,
+    "concept": "vercel.json",
+    "explanation": "The `vercel.json` file allows you to specify build settings, routes, redirects, and other project configurations.",
+    "usage": "Setting up a custom redirect from '/old-page' to '/new-page'.",
+    "location": "Project root directory"
+  },
+  {
+    "id": 39,
+    "question": "Vercel is built by the same team that created which popular frontend framework?",
+    "options": ["Angular", "Vue.js", "Next.js", "Svelte"],
+    "correct": 2,
+    "concept": "Vercel and Next.js",
+    "explanation": "Vercel is the creator and maintainer of Next.js, a leading React framework.",
+    "usage": "Understanding the tight integration and optimized performance of Next.js on Vercel.",
+    "location": "Technology ecosystem"
+  },
+  {
+    "id": 40,
+    "question": "What does Vercel's 'Instant Rollback' feature allow you to do?",
+    "options": ["Delete your project instantly", "Go back to a previous deployment with a single click", "Undo a local git commit", "Delete a preview deployment"],
+    "correct": 1,
+    "concept": "Instant Rollback",
+    "explanation": "If a production deployment has issues, you can instantly revert to a previous, stable deployment.",
+    "usage": "Quickly recovering from a bug that was pushed to production.",
+    "location": "Vercel project dashboard"
+  },
+  {
+    "id": 41,
+    "question": "What is Express.js?",
+    "options": ["A frontend framework for React", "A database system", "A back-end web application framework for Node.js", "A JavaScript testing library"],
+    "correct": 2,
+    "concept": "Express.js",
+    "explanation": "Express.js is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+    "usage": "Building the backend API for a web application.",
+    "location": "Server-side code"
+  },
+  {
+    "id": 42,
+    "question": "In Express, what is 'middleware'?",
+    "options": ["A database driver", "Functions that have access to the request, response objects, and the next middleware function", "A templating engine", "A client-side script"],
+    "correct": 1,
+    "concept": "Middleware",
+    "explanation": "Middleware functions can execute code, make changes to the request and the response objects, end the request-response cycle, and call the next middleware.",
+    "usage": "Used for logging, authentication, or parsing request bodies.",
+    "location": "Application-level or router-level logic"
+  },
+  {
+    "id": 43,
+    "question": "Which method is used to define a route for a GET request in Express?",
+    "options": ["app.handle('/path', ...)", "app.get('/path', ...)", "app.post('/path', ...)", "app.route('GET', '/path', ...)"],
+    "correct": 1,
+    "concept": "Routing",
+    "explanation": "The `app.get()` function is used to define a route handler for incoming GET requests to a specific path.",
+    "usage": "Creating an endpoint to serve a webpage or return JSON data.",
+    "location": "Server routing file"
+  },
+  {
+    "id": 44,
+    "question": "In an Express route handler `(req, res) => {}`, what does `req` represent?",
+    "options": ["The response object", "A required library", "The request object", "A redirect command"],
+    "correct": 2,
+    "concept": "Request Object (req)",
+    "explanation": "The `req` object represents the HTTP request and has properties for the request query string, parameters, body, HTTP headers, and so on.",
+    "usage": "Accessing data submitted in a form or URL parameters.",
+    "location": "Route handler function"
+  },
+  {
+    "id": 45,
+    "question": "Which method on the response object (`res`) is used to send a JSON response?",
+    "options": ["res.send()", "res.html()", "res.json()", "res.end()"],
+    "correct": 2,
+    "concept": "Response Object (res)",
+    "explanation": "`res.json()` sends a JSON response, automatically setting the Content-Type header to 'application/json'.",
+    "usage": "Sending data from an API endpoint to a client.",
+    "location": "Route handler function"
+  },
+  {
+    "id": 46,
+    "question": "How do you start an Express server to listen on port 3000?",
+    "options": ["app.start(3000)", "app.run(3000)", "app.listen(3000)", "server.begin(3000)"],
+    "correct": 2,
+    "concept": "Starting the Server",
+    "explanation": "The `app.listen()` method binds and listens for connections on the specified host and port.",
+    "usage": "Making the web server active and ready to handle requests.",
+    "location": "Main server file (e.g., index.js)"
+  },
+  {
+    "id": 47,
+    "question": "What is the purpose of `express.Router()`?",
+    "options": ["To start the server", "To create modular, mountable route handlers", "To parse incoming request bodies", "To connect to a database"],
+    "correct": 1,
+    "concept": "Express Router",
+    "explanation": "`express.Router` is a class used to create modular route handlers, helping to organize the application's routes.",
+    "usage": "Grouping all user-related routes (e.g., /users, /users/:id) into a single file.",
+    "location": "Route definition files"
+  },
+  {
+    "id": 48,
+    "question": "Which middleware is commonly used to parse incoming JSON request bodies?",
+    "options": ["express.json()", "express.parser()", "express.body()", "express.json.parse()"],
+    "correct": 0,
+    "concept": "Body Parsing Middleware",
+    "explanation": "`express.json()` is a built-in middleware function that parses incoming requests with JSON payloads.",
+    "usage": "Handling POST requests that send data in JSON format.",
+    "location": "Application-level middleware setup"
+  },
+  {
+    "id": 49,
+    "question": "How do you access URL parameters in an Express route defined as `/users/:userId`?",
+    "options": ["req.query.userId", "req.body.userId", "req.params.userId", "req.url.userId"],
+    "correct": 2,
+    "concept": "Route Parameters",
+    "explanation": "Route parameters are available on the `req.params` object; the property name corresponds to the name in the route path.",
+    "usage": "Fetching a specific user's data from a database based on the ID in the URL.",
+    "location": "Dynamic route handler"
+  },
+  {
+    "id": 50,
+    "question": "What does the `next()` function do in Express middleware?",
+    "options": ["Stops the server", "Ends the request-response cycle", "Passes control to the next middleware function in the stack", "Redirects the user to the next page"],
+    "correct": 2,
+    "concept": "next() function",
+    "explanation": "Calling `next()` passes control to the next middleware. If not called, the request will be left hanging.",
+    "usage": "Continuing to the next step (e.g., the route handler) after an authentication check passes.",
+    "location": "Custom middleware function"
+  }
 ]
